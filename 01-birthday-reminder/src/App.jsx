@@ -1,8 +1,17 @@
+import { useState } from "react";
+import data from "./data";
+import List from "./list";
+
 function App() {
+  const [people, setPeople] = useState(data);
   return (
-    <>
-      <h1>My First React App!</h1>
-    </>
+    <main>
+      <section className="container">
+        <h3>{people.length} birthdays today</h3>
+        <List people={people} />
+        <button onClick={() => console.log("clicked")}>Clear All</button>
+      </section>
+    </main>
   );
 }
 
