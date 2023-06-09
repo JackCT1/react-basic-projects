@@ -1,5 +1,5 @@
-const Tour = () => {
-  return <h2>Single Tour Component</h2>;
+const Tours = () => {
+  return <h1>Tours Component</h1>;
 };
 
-export default Tour;
+export default Tours;
