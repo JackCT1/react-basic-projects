@@ -15,6 +15,17 @@ function App() {
       ];
     });
   }
+
+  function toggleTodo(id, completed) {
+    setTodos((currentTodos) => {
+      return currentTodos.map((todo) => {
+        if (todo.id === id) {
+          return { ...todo, completed };
+        }
+        return todo;
+      });
+    });
+  }
   return (
     <>
       <form onSubmit={handleSubmit} className="new-item-form">
