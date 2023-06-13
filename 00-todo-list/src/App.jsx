@@ -14,6 +14,8 @@ function App() {
         { id: crypto.randomUUID(), title: newItem, completed: false },
       ];
     });
+
+    setNewItem("");
   }
 
   function toggleTodo(id, completed) {
